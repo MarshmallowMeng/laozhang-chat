@@ -28,7 +28,7 @@ export default function MessageBubble({ role, text, typing = false }) {
             '张'
           ) : (
             <img
-              src="/avatar.jpg"
+              src={`${import.meta.env.BASE_URL}avatar.jpg`}
               alt="老张"
               onError={() => setAvatarFailed(true)}
             />
